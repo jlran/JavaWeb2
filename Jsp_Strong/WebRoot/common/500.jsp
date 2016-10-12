@@ -1,0 +1,24 @@
+<%@page import="com.sun.org.omg.CORBA.ExceptionDescription"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"
+isErrorPage="true"
+%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>500处理页面</title>
+    
+
+  </head>
+  
+  <body>
+     500错误！系统正在抢修中...<br/>
+            错误原因： <%=exception.getMessage() %>
+  </body>
+</html>

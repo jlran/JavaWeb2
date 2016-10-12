@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+  <!-- 标签库的版本 -->
+  <tlib-version>1.1</tlib-version>
+  <!-- 标签库前缀 -->
+  <short-name>joran</short-name>
+  <!-- tld文件的唯一标记 -->
+  <uri>http://52joran.duapp.com</uri>
+
+  <!-- 一个标签的声明 -->
+  <tag>
+    <!-- 标签名称 -->
+    <name>Demo1</name>
+    <!-- 标签处理器类的全名 -->
+    <tag-class>com.github.jlran.tag.Demo1</tag-class>
+    <!-- 输出标签体内容格式 -->
+    <body-content>scriptless</body-content>
+  </tag>
+  
+  
+  <tag>
+    <name>Demo02</name>
+    <tag-class>com.github.jlran.tag.Demo02</tag-class>
+    <body-content>scriptless</body-content>
+    <!-- 属性声明 -->
+    <attribute>
+    	<!-- 属性名称 -->
+    	<name>num</name>
+    	<!-- 是否必填 -->
+    	<required>true</required>
+    	<!-- 是否支持EL表达式 -->
+    	<rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+ </taglib>

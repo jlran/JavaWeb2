@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<!-- 配置web应用参数 -->
+	<context-param>
+		<param-name>AAA</param-name>
+		<param-value>AAA Value</param-value>
+	</context-param>
+	<context-param>
+		<param-name>BBB</param-name>
+		<param-value>BBB Value</param-value>
+	</context-param>
+	<context-param>
+		<param-name>CCC</param-name>
+		<param-value>CCC Value</param-value>
+	</context-param>
+	
+	
+	
+	
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo01</servlet-name>
+    <servlet-class>com.github.jlran.servlet.Demo01</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo01Mapping</servlet-name>
+    <servlet-class>com.github.jlran.mapping.Demo01Mapping</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>life01</servlet-name>
+    <servlet-class>com.github.jlran.life.life01</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Init01</servlet-name>
+    <servlet-class>com.github.jlran.init.Init01</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>thread01</servlet-name>
+    <servlet-class>com.github.jlran.thread.thread01</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>config01</servlet-name>
+    <servlet-class>com.github.jlran.config.config01</servlet-class>
+    <init-param>
+    	<param-name>path</param-name>
+    	<param-value>D:\javaCode\a.txt</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>aaa</param-name>
+    	<param-value>aaa value</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>bbb</param-name>
+    	<param-value>bbb value</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>context01</servlet-name>
+    <servlet-class>com.github.jlran.context.context01</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>context02</servlet-name>
+    <servlet-class>com.github.jlran.context.context02</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>context03</servlet-name>
+    <servlet-class>com.github.jlran.context.context03</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>context04</servlet-name>
+    <servlet-class>com.github.jlran.context.context04</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>forward01</servlet-name>
+    <servlet-class>com.github.jlran.forward.forward01</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetData</servlet-name>
+    <servlet-class>com.github.jlran.forward.GetData</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>forward02</servlet-name>
+    <servlet-class>com.github.jlran.forward.forward02</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Demo01</servlet-name>
+    <url-pattern>/Demo01</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo01Mapping</servlet-name>
+    <url-pattern>/Demo01Mapping</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>life01</servlet-name>
+    <url-pattern>/life01</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Init01</servlet-name>
+    <url-pattern>/Init01</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>thread01</servlet-name>
+    <url-pattern>/thread01</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>config01</servlet-name>
+    <url-pattern>/config01</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>context01</servlet-name>
+    <url-pattern>/context01</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>context02</servlet-name>
+    <url-pattern>/context02</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>context03</servlet-name>
+    <url-pattern>/context03</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>context04</servlet-name>
+    <url-pattern>/context04</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>forward01</servlet-name>
+    <url-pattern>/forward01</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetData</servlet-name>
+    <url-pattern>/GetData</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>forward02</servlet-name>
+    <url-pattern>/forward02</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
